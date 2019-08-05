@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signinpage"
+    tools:context=".ForgetPass">
+
+    <TextView
+        android:id="@+id/as_tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="675dp"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+        android:text="@string/back"
+        android:textColor="@color/field_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:drawableTop="@drawable/ic_forgot"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/forgotPassword"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="2dp"
+
+        android:layout_weight="0"
+
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/email_request"
+        android:textColor="@color/field_color"
+        app:layout_constraintBottom_toTopOf="@+id/resetPass_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/resetPass_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="69dp"
+        android:layout_weight="0"
+        android:autofillHints="@string/Email"
+        android:background="@drawable/shape_field"
+        android:drawableStart="@drawable/ic_email_868686_24dp"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/field_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/resetPass_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/resetPass_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/btn_blue"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:text="@string/request"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetPass_et" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

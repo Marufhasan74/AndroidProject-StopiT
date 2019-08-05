@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alp_llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signinpage"
+    android:orientation="vertical"
+    tools:context=".LandingPage">
+
+    <ImageView
+        android:id="@+id/alp_ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:src="@drawable/anushondhan_logo" />
+
+</LinearLayout>
